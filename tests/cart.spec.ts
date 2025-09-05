@@ -20,7 +20,7 @@ test.describe('Carrito de compras', () => {
     // Agregar al carrito
     await productPage.addToCart();
 
-    // Validar mensaje de éxito
+    // Validar mensaje de éxito this is a test
     await expect(await productPage.successMessage()).toBeVisible();
   });
 
