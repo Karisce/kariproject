@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('My first tests', () => {
     test('Home → Add iPhone to cart (OpenCart)', async ({ page }) => {
       await page.goto('https://opencart.abstracta.us/');
+      await page.screenshot({ path: "Capturas/" + Date.now() + "_screenshot.jpg" });
 
       // Locate the iPhone product card in the Featured list on Home
       const iphoneCard = page
